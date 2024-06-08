@@ -3,22 +3,32 @@ pipeline {
     stages {
         stage('requirements') {
             steps {
-                    echo '2'
+                echo '1'
             }
         }
         stage('dvc_data_get') {
             steps {
-                    echo "3"
-            }
-        }  
-        stage('run_data_test') {
-            steps {
-                    echo "2"
+                echo '1'
             }
         }
-        stage('run_model_test') {
+         stage('Preprocess data') {
             steps {
-                    echo "2"
+                echo '1'
+            }
+        }
+        stage('Train model') {
+            steps {
+                echo '1'
+            }
+        }
+        stage('Evaluate model') {
+            steps {
+               echo '1'
+            }
+        }
+        stage('run_data_test') {
+            steps {
+                echo '1'
             }
         }
     }
