@@ -14,6 +14,7 @@ pipeline {
         stage('run_data_test') {
             steps {
                     echo "2"
+            }
         }
         stage('run_model_test') {
             steps {
