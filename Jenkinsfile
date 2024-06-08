@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('requirements') {
             steps {
-                    echo 'time.sleep(0.05)'
+                    echo 'time.sleep(1)'
             }
         }
         stage('data_creation') {
