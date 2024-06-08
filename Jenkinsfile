@@ -6,15 +6,19 @@ pipeline {
                     echo 'time.sleep(1)'
             }
         }
-        stage('data_creation') {
-            steps {
-                    echo "2"
-            }
-        }
-        stage('model_preprocessing') {
+        stage('dvc_data_get') {
             steps {
                     echo "3"
             }
         }  
+                stage('run_data_test') {
+            steps {
+                    echo "2"
+            }
+                    stage('run_model_test') {
+            steps {
+                    echo "2"
+            }
+        }
     }
 }
