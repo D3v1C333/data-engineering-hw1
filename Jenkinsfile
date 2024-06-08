@@ -11,17 +11,17 @@ pipeline {
                 echo '1'
             }
         }
-         stage('Preprocess data') {
+         stage('preprocess_data') {
             steps {
                 echo '1'
             }
         }
-        stage('Train model') {
+        stage('train_model') {
             steps {
                 echo '1'
             }
         }
-        stage('Evaluate model') {
+        stage('evaluate_model') {
             steps {
                echo '1'
             }
